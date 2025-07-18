@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac's Store - Your One-Stop Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Isaac's Store</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Isaac's Store</h1>
+            <p>Your one-stop shop for shoes, electronics, groceries, and football jerseys</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="shoes">Shoes</button>
+                <button class="filter-btn" data-category="electronics">Electronics</button>
+                <button class="filter-btn" data-category="groceries">Groceries</button>
+                <button class="filter-btn" data-category="jerseys">Football Jerseys</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Isaac's Store</h2>
+                <p>Isaac's Store has been serving customers for over a decade, providing quality products across multiple categories. From the latest electronics to comfortable shoes, fresh groceries, and authentic football jerseys, we're committed to offering the best shopping experience.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Shipping</h3>
+                        <p>Quick delivery nationwide</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Quality Guaranteed</h3>
+                        <p>100% authentic products</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Always here to help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Main Street, City, Country</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@isaacsstore.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Isaac's Store</h3>
+                    <p>Your trusted shopping destination</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#products">Shoes</a></li>
+                        <li><a href="#products">Electronics</a></li>
+                        <li><a href="#products">Groceries</a></li>
+                        <li><a href="#products">Football Jerseys</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Isaac's Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
